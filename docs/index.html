@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NadiaStats - Objetivos y récords personales de gimnasia">
+    <title>NadiaStats</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #5b5bd6, #8b5cf6);
+            color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 24px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 760px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 96px;
+            height: 96px;
+            margin: 0 auto 24px;
+            border-radius: 28px;
+            background: rgba(255, 255, 255, 0.18);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 52px;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 12px;
+        }
+
+        .subtitle {
+            font-size: 20px;
+            opacity: 0.92;
+            margin-bottom: 32px;
+        }
+
+        .card {
+            background: #ffffff;
+            color: #222222;
+            border-radius: 24px;
+            padding: 32px;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.2);
+            text-align: left;
+        }
+
+        .card h2 {
+            text-align: center;
+            margin-bottom: 22px;
+            font-size: 26px;
+        }
+
+        .features {
+            list-style: none;
+            margin-bottom: 28px;
+        }
+
+        .features li {
+            padding: 10px 0;
+            font-size: 17px;
+        }
+
+        .features li::before {
+            content: "✓";
+            font-weight: bold;
+            margin-right: 10px;
+        }
+
+        .download {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            background: #5b5bd6;
+            color: white;
+            font-size: 19px;
+            font-weight: bold;
+            padding: 16px 24px;
+            border-radius: 14px;
+            transition: transform 0.2s, opacity 0.2s;
+        }
+
+        .download:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+        .version {
+            text-align: center;
+            margin-top: 14px;
+            color: #666666;
+            font-size: 14px;
+        }
+
+        footer {
+            margin-top: 24px;
+            opacity: 0.8;
+            font-size: 14px;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 38px;
+            }
+
+            .subtitle {
+                font-size: 17px;
+            }
+
+            .card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+
+        <div class="logo">🤸</div>
+
+        <h1>NadiaStats</h1>
+
+        <p class="subtitle">
+            Tus objetivos y récords personales de gimnasia.
+        </p>
+
+        <section class="card">
+
+            <h2>Todo lo que necesitas para seguir tus logros</h2>
+
+            <ul class="features">
+                <li>Crear tus propios objetivos</li>
+                <li>Editar y eliminar objetivos</li>
+                <li>Marcar objetivos como completados</li>
+                <li>Registrar récords personales</li>
+                <li>Editar y eliminar récords</li>
+                <li>Guardar un historial de marcas</li>
+                <li>Guardar tus datos localmente</li>
+            </ul>
+
+            <a
+                class="download"
+                href="https://github.com/elsilbla-byte/GymStats/releases/latest/download/NadiaStats.apk"
+            >
+                ⬇️ Descargar NadiaStats para Android
+            </a>
+
+            <p class="version">
+                Versión 1.0.0 · Android
+            </p>
+
+        </section>
+
+        <footer>
+            NadiaStats · Creado para registrar objetivos y récords personales
+        </footer>
+
+    </main>
+</body>
+</html>
